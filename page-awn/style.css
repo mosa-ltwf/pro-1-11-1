@@ -1,0 +1,300 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alexandria";
+    transition: 0.5s;
+}
+:root{
+    --color-dark-orange: #FF7000;
+    --color-light-oraing: #ff7b00;
+    --color-dark-burgundy-1: #540375;
+    --color-light-burgundy-2: #3f51b5;
+    --color-light-blue-2: #2f79ff;
+    --color-dark-blue: #0A2647;
+    --color-white: #ffffff;
+
+}
+body{
+    background-image: url(./img-awn/back-awn-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: none;
+}
+
+
+
+header{
+    /* background-image: url(./img/img-1.jpg); */
+    width: 100%;
+    height: 150px;
+    /* padding: 10px; */
+}
+
+header div{
+    /* padding: 10px; */
+    height: 150px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #9000a6;
+    background-image: linear-gradient(180deg, #ffffff50, transparent);
+}
+
+header div span{
+    display: block;
+    border-bottom: 5px solid #9000a6;
+    text-shadow: 0 0 2px var(--color-dark-blue);
+    font-family: 'Lemonada', cursive;
+}
+
+nav{
+    direction: rtl;
+    padding: 10px;
+    margin-top: -40px;
+    font-size: 25px;
+    background-color: #0040ff0c;
+    width: 100%;
+}
+nav a{
+    color: #0040ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #002081;
+    padding: 5px;
+    font-size: 26px;
+    text-decoration: underline;
+    background-color: #0040ff0c;
+}
+
+.app-mes{
+    width: 90%;
+    height: 145px;
+    background-color: #ff660073;
+    margin: 10px auto;
+    border: 5px;
+
+    /* border-top-right-radius: 25%; */
+    /* border-bottom-left-radius: 25%; */
+}
+
+.app-mes .mes{
+    margin: 10px auto;
+    width: 90%;
+    
+    text-align: center;
+}
+
+.app-mes .mes .mes-ti-te{
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    color: #ad00ff;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid #a200ff;
+    background-color: rgb(218 175 49 / 29%);
+    text-shadow: 0 0 2px white;
+    font-weight: bold;
+}
+
+.app-form{
+    margin: 20px auto;
+    width: 90%;
+    /* height: 300px; */
+    background-color: #ffd8bb09;
+    border-radius: 5px;
+}
+
+.app-form{
+    padding: 10px;
+}
+
+.app-form p{
+    color: #0c192c;
+    text-align: center;
+    font-size: 25px;
+    /* background-color: white; */
+}
+
+form .app-res{
+    direction: rtl;
+}
+form .app-res .inp-res{
+    width: 15%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.form .app-res .inp-res:hover{
+    opacity: 1;
+    background-color: #e99518;
+}
+
+.app-input .app-inpat-all .label-all{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #046dff;
+    text-decoration: underline;
+    text-shadow: 0px 0px 1px rgb(13, 30, 102);
+}
+
+.app-input{
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid #ffad660a;
+    background-color: #ffad660d;
+}
+
+.app-input .app-inpat-all .input-all{
+    margin: 10px 5px;
+    background-color: rgba(170, 59, 245, 0.59);
+    /* width: 30%; */
+    /* height: 50px; */
+    font-size: 25px;
+    padding: 2px;
+    color: var(--color-dark-blue);
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid var(--color-dark-blue);  
+    border-radius: 4px;
+    direction: rtl;
+}
+
+.app-input .app-inpat-all .input-all:focus{
+    outline: none; 
+    border: 2px solid var(--color-dark-blue); 
+}
+
+.app-input .app-inpat-all .input-all::placeholder{
+    color: #fcbd12;
+}
+
+.app-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.app-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(153, 0, 255);
+    text-decoration: underline;
+    border: 1px solid rgb(93, 0, 155);
+    /* opacity: 0.7; */
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.app-button button:focus + .article-article{
+    background-color: green;
+}
+
+.app-button button:hover{
+    opacity: 1;
+    color: #0df7ff;
+    background-color: rgb(116, 0, 194);
+    border: 1px solid;
+}
+
+.app-mes-mes{
+    margin: 10px auto;
+    padding: 10px;
+    height: 100px;
+
+    border: 1px solid rgba(255, 173, 102, 0.04);
+    background-color: rgba(255, 173, 102, 0.05);
+    background-image: url(./img-awn/back-lo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.te-1{
+    background-color: rgba(255, 255, 255, 0.459);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.app-help{
+    padding: 10px;
+    background-color: #ffaa008c;
+    font-weight: bold;
+}
+
+.app-help p{
+    text-align: right;
+    border-bottom: 1px solid;
+}
+
+.app-help span{
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+footer{
+    position: relative;
+    background-image: linear-gradient(187deg, #db0dee86, #52044c86);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+    margin: 1px;
+    /* box-shadow: ; */
+    /* background-image: url(./img-awn/img-2.jpg); */
+    background-position: top center;
+}
+
+footer:hover{
+    text-shadow: 0 0 5px white;
+}
+
+footer::before{
+    /* content: ''; */
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: -5px;
+    width: 110%;
+    height: 110%;
+    background-image: linear-gradient(187deg, #1fc8ff, #ff2155);
+}
+
+footer::selection{
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+.my-p-footer{
+    letter-spacing: 3px;
+    display: inline-block;
+}

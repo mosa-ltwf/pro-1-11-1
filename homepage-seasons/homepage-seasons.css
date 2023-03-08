@@ -1,0 +1,252 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    background-image: url(./img-pa/back-pag-home.png);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 110, 255);
+    /* height: 100px; */
+    background-color: rgba(255, 255, 255, 0.342);
+    border-bottom: 5px solid rgb(0, 110, 255);
+    direction: rtl;
+}
+
+header div{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-app{
+    width: 75%;
+    /* height: 500px; */
+    margin: 30px 0;
+    /* border-top: 2px solid rgb(0, 110, 255); */
+    border-bottom: 2px solid rgb(0, 110, 255);
+
+
+}
+.section-app .p-title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 110, 255);
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #ffffffed;
+    padding: 10px;
+}
+
+.app-box-all{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* height: 900px; */
+    /* display: none; */
+}
+
+.section-app .box-all{
+    width: 350px;
+    /* height: 250px; */
+    background-color: #ffffffcc;
+    padding: 10px;
+    margin: 10px 20px;
+
+    position: relative;
+}
+
+.section-app .box-all:hover .transparent{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    color: rgba(0, 110, 255, 0);
+    border: 0px none rgba(0, 110, 255, 0);
+    transform: translate(-50%, -50%) rotate(0deg);
+    transform-origin: center;
+    width: 0;
+    height: 0;
+    /* display: none; */
+}
+
+.section-app .box-all .transparent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(360deg);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 3px;
+    /* transform-origin: center center; */
+    z-index: 5;
+}
+
+
+.section-app .box-all .transparent:hover{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    color: rgba(0, 110, 255, 0);
+    border: 0px none rgba(0, 110, 255, 0);
+}
+
+.section-app .box-all a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-app .box-all .text-title-box{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 110, 255);
+    border-bottom: 2px solid rgb(0, 110, 255);
+    font-weight: bold;
+}
+
+.section-app .box-all img{
+    width: 310px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+}
+
+.app-help{
+    padding: 5px;
+}
+
+.app-help .help{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+    text-decoration: underline;
+
+    animation-name: click;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes click{
+    0%{
+        color: rgb(0, 110, 255);
+        text-shadow: 0 0 1px rgb(0, 110, 255);
+    }
+    50%{
+    color: transparent;
+    text-shadow: 0 0 0px transparent;
+    }
+    100%{
+    color: rgb(0, 110, 255);
+    text-shadow: 0 0 1px rgb(0, 110, 255);
+    }
+}
+
+.app-link-awn{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.61);
+    /* height: 50px; */
+    padding: 10px;
+    border-bottom: 1px solid rgb(10, 168, 10);
+    border-radius: 2px;
+    margin: 30px 0;
+}
+.app-link-awn a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.671);
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    border-radius: 4px;
+
+    animation-name: click-awn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.app-link-awn a:hover{
+    background-color: rgba(255, 0, 0, 0.767);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes click-awn{
+    0%{
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.671);
+    }
+    50%{
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.671);
+    }
+    100%{
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.671);
+    }
+}
+
+footer{
+    position: relative;
+    background-image: linear-gradient(187deg, #10a3ddd1, #1169b1f2);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+    margin: 1px;
+    /* box-shadow: ; */
+    width: 100%;
+}
+
+footer:hover{
+    text-shadow: 0 0 5px white;
+}
+
+footer::before{
+    /* content: ''; */
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: -5px;
+    width: 110%;
+    height: 110%;
+    background-image: linear-gradient(187deg, #1fc8ff, #ff2155);
+}
+footer p{
+    display: inline-block;
+}
+
+footer::selection{
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 5px white;
+}
